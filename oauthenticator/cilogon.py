@@ -67,6 +67,9 @@ class CILogonOAuthenticator(OAuthenticator):
     CILOGON_CLIENT_ID - the client ID for CILogon OAuth
     CILOGON_RSA_KEY_PATH - path to file containing rsa private key
     CILOGON_CSR_PATH - path to file certificate request (.csr)
+    OAUTH_CALLBACK_URL - callback url, generally https://[YOUR_URL]/hub/oauth_callback
+    
+    Callback needs to be HTTPS for cilogon to work.
     """
     login_service = "CILogon"
     
